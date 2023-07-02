@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Norse-bold';
+    src: url("./fonts/Norse-Bold.otf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.left {
+    width: 36vw;
+    height: 100vh;
+    background-image: url("./images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    position: relative;
+}
+
+.sidebar {
+    height: 150px;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50vh - 150px)
+}
+
+.sidebar > img {
+    height: 125px;
+}
+
+.sidebar > h1 {
+    font-family: 'Norse-bold', sans-serif;
+    color: white;
+    font-size: 92px;
+    position: relative;
+    top: 18px;
+}
+
+.right {
+    width: 64vw;
+    height: 100vh;
+}
+
+.right-top {
+    height: 50vh;
+    background-color: #FBFBFB;
+}
+
+.right p {
+    margin: 0;
+    padding-left: 50px;
+    padding-right: 190px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right p:first-child {
+    padding-top: 180px;
+    padding-bottom: 30px;
+}
+
+.right-bottom {
+    height: 50vh;
+}
+
+.right-bottom h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.right-bottom h1 {
+    font-size: 24px;
+    padding-top: 14px;
+    padding-bottom: 24px;
+    margin-left: 50px;
+}
+
+.form-top {
+    display: flex;
+    gap: 25px;
+    padding-bottom: 18px;
+    box-shadow: 1px 10px 10px -2px lightgrey;
+}
+
+label {
+    display: block;
+    font-size: 12px;
+
+    color: #474747;
+    font-weight: bold;
+    margin-bottom: 4px;
+    margin-left: 50px;
+}
+
+input {
+    margin-bottom: 18px;
+    margin-left: 50px;
+    width: 20vw;
+    height: 30px;
+    padding-left: 10px;
+    position: relative;
+
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::after {
+    content: "test";
+    display: block;
+    position: absolute;
+    top: 50px;
+    width: 200px;
+    height: 200px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+.form-bottom {
+    padding-left: 50px;
+    margin-top: 28px;
+}
+
+button {
+    width: 225px;
+    padding: 14px 0;
+    cursor: pointer;
+
+    color: white;
+    font-size: 18px;
+    background-color: #596D48;
+    border: 1px solid #596D48;
+    border-radius: 8px;
+}
